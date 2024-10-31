@@ -1,9 +1,9 @@
 
 const EditContent = () => {
     return (
-        <>
+        <div>
 
-        </>
+        </div>
     );
 };
 
