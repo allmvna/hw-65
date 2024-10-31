@@ -1,7 +1,12 @@
 import "./App.css";
+import MyApp from "./containers/MyApp/MyApp.tsx";
 
 const App = () => {
-  return <></>;
+  return (
+      <>
+        <MyApp/>
+      </>
+  );
 };
 
 export default App;
