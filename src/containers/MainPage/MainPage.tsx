@@ -1,14 +1,15 @@
 import {useCallback, useEffect, useState} from "react";
 import axiosAPI from "../../axiosAPI.ts";
 import {IContent, IContentAPI} from "../../types";
-import {Alert, Card, CardContent, Typography} from "@mui/material";
+import {Alert, Button, Card, CardContent, Typography} from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import {useParams} from "react-router-dom";
+import {NavLink, useParams} from "react-router-dom";
 
 
 const MainPage = () => {
     const [contents, setContents] = useState<IContent[]>([]);
     const { pageName } = useParams<{ pageName: string }>();
+
 
 
     const fetchData = useCallback(async () => {
@@ -70,9 +71,14 @@ const MainPage = () => {
                                         {c.title}
                                     </Typography>
                                     <hr />
-                                    <Typography sx={{ fontSize: 16 }}>
+                                    <Typography sx={{ fontSize: 16, marginBottom: 2 }}>
                                         {c.content}
                                     </Typography>
+                                    <Button component={NavLink}
+                                            to={`/pages/admin/${c.id}`}
+                                            variant="contained">
+                                        Edit
+                                    </Button>
                                 </CardContent>
                             </Card>
                         </Grid>

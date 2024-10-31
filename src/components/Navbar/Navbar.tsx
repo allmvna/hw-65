@@ -72,6 +72,15 @@ const Navbar = () => {
                   Contacts
                 </Button>
                 <Button
+                    to="/pages/competitors"
+                    sx={buttonStyles}
+                    variant="outlined"
+                    component={NavLink}
+                    endIcon={<RecentActorsIcon />}
+                >
+                  Competitors
+                </Button>
+                <Button
                   to="/pages/products"
                   sx={buttonStyles}
                   variant="outlined"

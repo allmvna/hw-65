@@ -13,8 +13,9 @@ const MyApp = () => {
             </header>
             <Container maxWidth="lg" sx={{ color: "white" }}>
             <Routes>
-                <Route path="/pages" element={<MainPage />} />
-                <Route path="/pages/admin" element={<EditContent/>}/>
+                <Route path="/" element={<MainPage />} />
+                <Route path="/pages/admin/:id" element={<EditContent />} />
+                <Route path="/pages/admin" element={<EditContent />} />
                 <Route path="/pages/:pageName" element={<MainPage/>}/>
                 <Route
                     path="*"
