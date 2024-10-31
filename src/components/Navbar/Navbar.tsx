@@ -8,10 +8,10 @@ import {
 } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
-import CategoryIcon from '@mui/icons-material/Category';
-import CreateIcon from '@mui/icons-material/Create';
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
+import CategoryIcon from "@mui/icons-material/Category";
+import CreateIcon from "@mui/icons-material/Create";
 import RecentActorsIcon from "@mui/icons-material/RecentActors";
 
 const Navbar = () => {
@@ -72,11 +72,11 @@ const Navbar = () => {
                   Contacts
                 </Button>
                 <Button
-                    to="/pages/competitors"
-                    sx={buttonStyles}
-                    variant="outlined"
-                    component={NavLink}
-                    endIcon={<RecentActorsIcon />}
+                  to="/pages/competitors"
+                  sx={buttonStyles}
+                  variant="outlined"
+                  component={NavLink}
+                  endIcon={<RecentActorsIcon />}
                 >
                   Competitors
                 </Button>
@@ -104,18 +104,17 @@ const Navbar = () => {
                   variant="outlined"
                   component={NavLink}
                   endIcon={<MiscellaneousServicesIcon />}
-              >
+                >
                   Technologies
-              </Button>
+                </Button>
                 <Button
-                    to="/pages/admin"
-                    sx={{ ...buttonStyles, marginRight: 0, color: "#00ffd0"}}
-                    variant="outlined"
-                    component={NavLink}
-                    endIcon={<CreateIcon />}
+                  to="/pages/admin"
+                  sx={{ ...buttonStyles, marginRight: 0, color: "#00ffd0" }}
+                  variant="outlined"
+                  component={NavLink}
+                  endIcon={<CreateIcon />}
                 >
                   Admin
-
                 </Button>
               </Box>
             </Container>

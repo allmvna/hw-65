@@ -3,9 +3,9 @@ import MyApp from "./containers/MyApp/MyApp.tsx";
 
 const App = () => {
   return (
-      <>
-        <MyApp/>
-      </>
+    <>
+      <MyApp />
+    </>
   );
 };
 
